@@ -17,15 +17,15 @@
 # inherit from common g3
 -include device/lge/g3-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := g3,d850
+TARGET_OTA_ASSERT_DEVICE := g3,d852
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/d850/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/d852/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_d850_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_d852_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
@@ -34,7 +34,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2692743168
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 27325360128
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/lge/d850/rootdir/etc/fstab.g3
+TARGET_RECOVERY_FSTAB := device/lge/d852/rootdir/etc/fstab.g3
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
@@ -50,4 +50,4 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/lge/d850/BoardConfigVendor.mk
+-include vendor/lge/d852/BoardConfigVendor.mk
