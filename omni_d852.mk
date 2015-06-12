@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     device/lge/d852/kernel:kernel \
+    device/lge/d852/dtb:dtb \
     device/lge/d852/img_info:img_info
 
 PRODUCT_COPY_FILES += device/lge/d852/fstab.g3:recovery/root/fstab.g3
